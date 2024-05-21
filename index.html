@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img class="ttimg pt6" src="images/LoginBG6.jpg" style="opacity: 0;">
+    <img class="ttimg pt5" src="images/LoginBG5.png" style="opacity: 0;">
+    <img class="ttimg pt4" src="images/LoginBG4.png" style="opacity: 0;">
+    <img class="ttimg pt3" src="images/LoginBG3.png" style="opacity: 0;">
+    <img class="ttimg pt2" src="images/LoginBG2.png" style="opacity: 0;">
+    <img class="ttimg pt1" src="images/LoginBG1.jfif">
+    <div class="blackb"></div>
+    <div class="allcontent">
+        <div class="login-page">
+            <div class="logincontaner logincard">
+                <span id="slider"></span><br><br><br>
+                <div id="login_card">
+                    <div>email or username<br>
+                        <input type="text" id="login_email" value="Sujal"><br><br>
+                        password<br>
+                        <input type="password" id="login_password" value="123"><br><br>
+                    </div>
+                    <div onclick="login()" class="box-1">
+                        <div class="btn btn-one">
+                            <span>Login</span>
+                        </div>
+                    </div><br>
+                    <a id="switch_card_to_register" style="cursor: pointer;">Haven't account ?</a>
+                </div>
+                <div id="register_card">
+                    <div> email<br>
+                        <input type="text" id="register_email"><br><br>
+                        create password<br>
+                        <input type="password" id="register_pass"><br><br>
+                        confirm password<br>
+                        <input type="password" id="register_confirm_pass"><br><br>
+                    </div>
+                    <div onclick="register()" class="box-1">
+                        <div class="btn btn-one">
+                            <span>Register</span>
+                        </div>
+                    </div><br>
+                    <a id="switch_card_to_login" style="cursor: pointer;">Back to login</a>
+                </div>
+            </div>
+            <div id="alert"></div>
+        </div>
+        <div class="subcontent">
+            <div class="nev-bar">
+                <div id="home">Home</div>
+                <div id="contectus">Contact Us</div>
+                <div id="aboutus">About Us</div>
+            </div>
+            <div class="home-page">
+                <div class="topdiv">
+                    <div class="overlay1"></div>
+                </div>
+                <div class="titlecontent">India's Heritage Monuments</div>
+                <div class="content1">
+                    <div class="subdiv sardar">
+                        <img class="timg1" src="images/SOU/p1.jpg">
+                        <div class="st">Statue Of Unity</div>
+                    </div>
+                    <div class="subdiv taj">
+                        <img class="timg1" src="images/TajMahal/p1.jpg">
+                        <div class="st">Taj Mahal</div>
+                    </div>
+                    <div class="subdiv red">
+                        <img class="timg1" src="images/RedFort/p1.jpg">
+                        <div class="st">Red Fort</div>
+                    </div>
+                    <div class="subdiv rani">
+                        <img class="timg1" src="images/RaniKiVav/p2.jpg">
+                        <div class="st">Rani Ki Vav</div>
+                    </div>
+                    <div class="subdiv sun">
+                        <img class="timg1" src="images/SunTempleM/p1.jpg">
+                        <div class="st">Sun Temple</div>
+                    </div>
+                    <div class="subdiv qutub">
+                        <img class="timg1" src="images/QutubMinar/p1.jpg">
+                        <div class="st">Qutub Minar</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="title">About US</div> <br>
+                <span>Name</span>: Patel Sujal Maheshbhai<br>
+            </div>
+            <div class="cont-us">
+                <div class="title">Contact Us</div> <br>
+                you can contact us from <br>following social media<br>
+                <br><br>
+                <a href="https://www.instagram.com/_thesujalpatel_">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://github.com/thesujalpatel">
+                    <span>Github</span>
+                </a>
+                <a href="https://linkedin.com/in/sujal-patel-227b3829a">
+                    <span>Linkedin</span>
+                </a>
+
+            </div>
+            <div class="monuments">
+                <div id="sou">
+                    <div class="topdiv">
+                        <img class="timg p4" src="images/SOU/p4.avif" style="opacity: 0;">
+                        <img class="timg p3" src="images/SOU/p3.jpeg" style="opacity: 0;">
+                        <img class="timg p2" src="images/SOU/p2.jpg" style="opacity: 0;">
+                        <img class="timg p1" src="images/SOU/p1.jpg">
+                        <div class="overlay"></div>
+                        <div class="des"><span> The Statue Of Unity</span><br>has been built as an ode to the Iron Man
+                            of India, Sardar
+                            Vallabhbhai Patel, the first home minister of independent India.</div>
+                    </div>
+                    <br><br><br>
+                    <div class="content">
+                        <p>The Statue of Unity is the world's tallest statue, with a height of 182 metres (597 feet),
+                            located near
+                            Kevadia in the state of Gujarat, India. It depicts Indian statesman and independence
+                            activist Vallabhbhai
+                            Patel (1875–1950), who was the first deputy prime minister and home minister of independent
+                            India and an
+                            adherent of Mahatma Gandhi. Patel is highly respected for his leadership in uniting 562
+                            princely states of
+                            India to form the single Union of India. The statue is located in Gujarat on the Narmada
+                            River in the
+                            Kevadiya colony, facing the Sardar Sarovar Dam 100 kilometres (62 mi) southeast of the city
+                            of Vadodara.</p>
+                        <p>The project was first announced in 2010, and construction started in October 2013 by Indian
+                            company Larsen &
+                            Toubro, with a total construction cost of ₹27 billion (US$422 million). It was designed by
+                            Indian sculptor
+                            Ram V. Sutar and was inaugurated by the Prime Minister of India, Narendra Modi, on 31
+                            October 2018, the
+                            143rd anniversary of Patel's birth.</p><br>
+                        <span class="sticky"># History</span><br>
+                        <p>Narendra Modi announced the project on 7 October 2013 to mark the beginning of his tenth year
+                            as the chief
+                            minister of Gujarat.</p>
+                        <p>A society named Sardar Vallabhbhai Patel Rashtriya Ekta Trust (SVPRET) was formed under the
+                            chairmanship of
+                            the Chief Minister of Gujarat, to execute the project.</p>
+                        <p>Statue of Unity Movement was started in 2013 to collect the iron needed for the statue by
+                            asking farmers to
+                            donate their used farming instruments. By 2016, a total of 135 metric tonnes of scrap iron
+                            had been
+                            collected and about 109 tonnes of it was used to make the foundation of the statue after
+                            processing. A
+                            marathon titled Run For Unity was held on 15 December 2013 in Surat and Vadodara in support
+                            of the project.
+                        </p><br>
+                        <span class="sticky"># Design and construction</span><br><br>
+                        <b style="color: white;">Design</b>
+                        <p>After studying statues of Patel across the country, a team of historians, artists, and
+                            academics chose a
+                            design submitted by the Indian sculptor Ram V. Sutar. The Statue of Unity is a larger
+                            version of a statue of
+                            the leader installed at Ahmedabad International Airport. Commenting on the design, Ram
+                            Sutar's son, Anil
+                            Sutar explains that, "the expression, posture and pose justify the dignity, confidence, iron
+                            will as well as
+                            kindness that his personality exudes. The head is up, a shawl flung from shoulders and hands
+                            are on the side
+                            as if he is set to walk". Three models of the design measuring 3 feet (0.91 m), 18 feet (5.5
+                            m), and 30 feet
+                            (9.1 m) were initially created. Once the design of the largest model was approved, a
+                            detailed 3D-scan was
+                            produced which formed the basis for the bronze cladding cast in a foundry in China.</p>
+                        <p>Patel's dhoti-clad legs and the use of sandals for footwear rendered the design thinner at
+                            the base than at
+                            the top thereby affecting its stability. This was addressed by maintaining a slenderness
+                            ratio of 16:19
+                            rather than the customary 8:14 ratio of other tall buildings. The statue is built to
+                            withstand winds of up
+                            to 180 kilometres per hour (110 mph) and earthquakes measuring 6.5 on the Richter scale
+                            which are at a depth
+                            of 10 km and within a radius of 12 km of the statue. This is aided by the use of two 250
+                            tonne tuned mass
+                            dampers ensuring maximum stability.</p>
+                        <p>The total height of the structure is 240 m (790 ft), with a base of 58 m (190 ft) and the
+                            statue measuring
+                            182 m (597 ft). The height of 182 metres was specifically chosen to match the number of
+                            seats in the Gujarat
+                            Legislative Assembly.</p>
+                        <b style="color: white;">Funding</b>
+                        <p>The Statue of Unity was built by a Public Private Partnership model, with most of the money
+                            coming from the
+                            Government of Gujarat. The Gujarat state government had allotted ₹500 crore (equivalent to
+                            ₹641 crore or
+                            US$80 million in 2020) for the project in its budget from 2012 to 2015. In the 2014–15 Union
+                            Budget, ₹200
+                            crore (equivalent to ₹272 crore or US$34 million in 2020) was allocated for the construction
+                            of the statue.
+                            Funds were also contributed by Public Sector Undertakings under the Corporate Social
+                            Responsibility scheme.
+                        </p>
+                        <b style="color: white;">Construction</b>
+                        <p>A consortium comprising Turner Construction, Michael Graves and Associates and the Meinhardt
+                            Group supervised
+                            the project. The project took 57 months to complete – 15 months for planning, 40 months for
+                            construction and
+                            2 months for handing over by the consortium. The total cost of the project was estimated to
+                            be about ₹2,063
+                            crore (equivalent to ₹28 billion or US$350 million in 2020) by the Government. The tender
+                            bids for the first
+                            phase were invited in October 2013 and were closed in November 2013.</p>
+                        <p>Narendra Modi, then serving as the Chief Minister of Gujarat, laid the statue's foundation
+                            stone on 31
+                            October 2013, the 138th anniversary of Patel's birth.</p>
+                        <p>Indian infrastructure company Larsen & Toubro won the contract on 27 October 2014 for its
+                            lowest bid of
+                            ₹2,989 crore (equivalent to ₹41 billion or US$510 million in 2020) for the design,
+                            construction and
+                            maintenance of the statue. L&T commenced the construction on 31 October 2014. In the first
+                            phase of the
+                            project, ₹1,347 crore was earmarked for the main statue, ₹235 crore for the exhibition hall
+                            and convention
+                            centre, ₹83 crore for the bridge connecting the memorial to the mainland and ₹657 crore for
+                            the maintenance
+                            of the structure for a duration of 15 years after its completion. The Sadhu Bet hillock was
+                            flattened from
+                            70 metres to 55 metres to lay the foundation of the statue.</p>
+                        <p>L&T employed over 3000 workers and 250 engineers in the statue's construction. The core of
+                            the statue used
+                            210,000 cubic metres (7,400,000 cu ft) of cement and concrete, 6,500 tonnes of structural
+                            steel, and 18,500
+                            tonnes of reinforced steel. The outer façade is made up of 1,700 tonnes of bronze plates and
+                            1,850 tonnes of
+                            bronze cladding which in turn consists of 565 macro and 6000 micro panels. The bronze panels
+                            were cast in
+                            Jiangxi Tongqing Metal Handicrafts Co. Ltd (the TQ Art foundry) in China as facilities large
+                            enough for such
+                            casting were unavailable in India. The bronze panels were transported over sea and then by
+                            road to a
+                            workshop near the construction site where they were assembled.</p>
+                        <p>Local tribals belonging to the Tadvi tribe opposed the land acquisition for the development
+                            of tourism
+                            infrastructure around the statue. Around 300 activists were arrested ahead of unveiling of
+                            the statue.
+                            People of Kevadia, Kothi, Waghodia, Limbdi, Navagam, and Gora villages opposed the
+                            construction of the
+                            statue and demanded the restitution of the land rights over 375 hectares (927 acres) of land
+                            acquired
+                            earlier for the dam as well as for the formation of a new Garudeshwar subdistrict. They also
+                            opposed the
+                            formation of Kevadia Area Development Authority (KADA) and the construction of the
+                            Garudeshwar
+                            weir-cum-causeway project. The government of Gujarat accepted most of their demands.</p>
+                        <p>Construction of the monument was completed in mid-October 2018; and the inaugural ceremony
+                            was held on 31
+                            October 2018 (143rd birth anniversary of Vallabhbhai Patel), and was presided over by Prime
+                            Minister
+                            Narendra Modi. The statue has been described as a tribute to Indian engineering skills.</p>
+                        <br>
+                        <span class="sticky"># Design and construction</span><br>
+                        <p>The Statue of Unity is the world's tallest statue at 182 metres (597 ft). It rises 54 metres
+                            (177 ft) higher
+                            than the previous record holder, the Spring Temple Buddha in China's Henan province. The
+                            previous tallest
+                            statue in India was the 41 m (135 ft) tall statue of Lord Hanuman at the Paritala Anjaneya
+                            Temple near
+                            Vijayawada in the state of Andhra Pradesh. The statue can be seen within a 7 km (4.3 mi)
+                            radius.</p>
+                        <p>The monument is constructed on a river island named Sadhu Bet, 3.2 km (2.0 mi) away from and
+                            facing the
+                            Narmada Dam downstream. The statue and its surroundings occupy more than 2 hectares (4.9
+                            acres), and are
+                            surrounded by a 12 km (7.5 mi) long artificial lake formed by the Garudeshwar weir
+                            downstream on the Narmada
+                            river.</p>
+                        <p>The statue is divided into five zones of which only three are accessible to the public. From
+                            its base to the
+                            level of Patel's shins is the first zone which has three levels and includes the exhibition
+                            area, mezzanine
+                            and roof. The first zone also contains a memorial garden and a museum. The second zone
+                            reaches up to Patel's
+                            thighs, while the third extends up to the viewing gallery at a height of 153 metres. The
+                            fourth zone is the
+                            maintenance area while the final zone comprises the head and shoulders of the statue.</p>
+                        <p>The museum in the first zone catalogues the life of Sardar Patel and his contributions. An
+                            adjoining
+                            audio-visual gallery provides a 15-minute long presentation on Patel and also describes the
+                            tribal culture
+                            of the state. The concrete towers which form the statue's legs contain two elevators each.
+                            Each lift can
+                            carry 26 people at a time to the viewing gallery in just over 30 seconds. The gallery is
+                            located at a height
+                            of 153 metres (502 ft) and can hold up to 200 people.</p><br>
+                        <span class="sticky"># Tourism</span><br>
+                        <p>Over 128,000 tourists visited the statue in the 11 days after its opening to the public on 1
+                            November 2018.
+                            The daily average tourist footfall at Statue of Unity during November 2019 reached 15,036,
+                            outpacing the
+                            Statue of Liberty (which attracts around 10,000 daily visitors on average). It has been
+                            included in the
+                            Shanghai Cooperation Organisation’s ‘8 Wonders of SCO’ list. In its first year of operation,
+                            the Statue of
+                            Unity attracted 2,900,000 visitors and collected ₹82 crore (US$11.64 million) in ticket
+                            revenue. By 15 March
+                            2021, 5,000,000 tourists visited the venue. It was visited by one crore (10 million) people
+                            by November
+                            2022.</p>
+                    </div>
+                </div>
+                <div id="taj">
+                    <div class="topdiv">
+                        <img class="timg p4" src="images/TajMahal/p4.jpg" style="opacity: 0;">
+                        <img class="timg p3" src="images/TajMahal/p3.jpg" style="opacity: 0;">
+                        <img class="timg p2" src="images/TajMahal/p2.jpg" style="opacity: 0;">
+                        <img class="timg p1" src="images/TajMahal/p1.jpg">
+                        <div class="overlay"></div>
+                        <div class="des"><span>The Taj Mahal</span><br>is an ivory-white marble mausoleum on the south
+                            bank
+                            of the
+                            Yamuna river in the Indian city of Agra.</div>
+                    </div>
+                    <br><br><br>
+                    <div class="content">
+                        <p>The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in
+                            Agra,
+                            Uttar
+                            Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan (r.
+                            1628–1658) to house
+                            the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.
+                            The
+                            tomb is the
+                            centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house,
+                            and is
+                            set in
+                            formal gardens bounded on three sides by a crenellated wall.</p>
+                        <p>Construction of the mausoleum was essentially completed in 1643, but work continued on other
+                            phases of the
+                            project for another 10 years. The Taj Mahal complex is believed to have been completed in
+                            its
+                            entirety in
+                            1653 at a cost estimated at the time to be around ₹32 million, which in 2020 would be
+                            approximately ₹70
+                            billion (about US $1 billion). The construction project employed some 20,000 artisans under
+                            the
+                            guidance of
+                            a board of architects led by Ustad Ahmad Lahauri, the emperor’s court architect. Various
+                            types
+                            of symbolism
+                            have been employed in the Taj to reflect natural beauty and divinity.</p>
+                        <p>The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of
+                            Muslim art in
+                            India
+                            and
+                            one of the universally admired masterpieces of the world's heritage". It is regarded by many
+                            as
+                            the best
+                            example
+                            of
+                            Mughal architecture and a symbol of India's rich history. The Taj Mahal attracts more than 6
+                            million
+                            visitors a
+                            year and in 2007, it was declared a winner of the New 7 Wonders of the World (2000–2007)
+                            initiative.</p><br>
+                        <span class="sticky"># Etymology</span><br>
+                        <p>Abdul Hamid Lahauri, in his book from 1636 Padshahnama, refers to the Taj Mahal as rauza-i
+                            munawwara
+                            (Perso-Arabic:
+                            روضه منواره, rawdah-i munawwarah), meaning the illumined or illustrious tomb.The current
+                            name
+                            for the Taj
+                            Mahal
+                            is
+                            believed to be derived from the Persian تاج محل tāj mahall, meaning "crown" (tāj) "palace"
+                            (mahall).The name
+                            "Taj"
+                            came from the corruption of the second syllable of "Mumtaz".</p><br>
+                        <span class="sticky"># Inspiration</span><br>
+                        <p>The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife
+                            Mumtaz Mahal, who
+                            died
+                            on 17 June that year, while giving birth to their 14th child, Gauhara Begum.Construction
+                            started
+                            in
+                            1632, and the mausoleum was completed in 1648, while the surrounding buildings and garden
+                            were
+                            finished five
+                            years later.The imperial court documenting Shah Jahan's grief after the death of Mumtaz
+                            Mahal
+                            illustrates
+                            the
+                            love story held as the inspiration for the Taj Mahal.</p><br>
+                        <span class="sticky"># Architecture and design</span><br>
+                        <p>The Taj Mahal incorporates and expands on design traditions of Indo-Islamic and earlier
+                            Mughal
+                            architecture.
+                            Specific inspiration came from successful Timurid and Mughal buildings including the Gur-e
+                            Amir
+                            (the tomb of
+                            Timur,
+                            progenitor of the Mughal dynasty, in Samarkand), Humayun's Tomb which inspired the Charbagh
+                            gardens and
+                            hasht-behesht (architecture) plan of the site, Itmad-Ud-Daulah's Tomb (sometimes called the
+                            Baby
+                            Taj), and
+                            Shah
+                            Jahan's own Jama Masjid in Delhi. While earlier Mughal buildings were primarily constructed
+                            of
+                            red
+                            sandstone,
+                            Shah
+                            Jahan promoted the use of white marble inlaid with semi-precious stones. Buildings under his
+                            patronage
+                            reached
+                            new
+                            levels of refinement.</p><br>
+                        <span class="sticky"># Construction</span><br>
+                        <p>The Taj Mahal is built on a parcel of land to the south of the walled city of Agra. Shah
+                            Jahan
+                            presented
+                            Maharaja
+                            Jai Singh I with a large palace in the centre of Agra in exchange for the land. An area of
+                            roughly 1.2
+                            hectares
+                            (3 acres) was excavated, filled with dirt to reduce seepage, and levelled at 50 metres (160
+                            ft)
+                            above the
+                            riverbank
+                            level. In the tomb area, piles were dug and filled with stone and rubble to form the
+                            footings of
+                            the tomb.
+                            Instead
+                            of lashed bamboo, workmen constructed a colossal brick scaffold that mirrored the tomb. The
+                            scaffold was so
+                            enormous
+                            that foremen expected it to take years to dismantle.</p>
+                        <p>The Taj Mahal was constructed using materials from all over India and Asia. It is believed
+                            over
+                            1,000
+                            elephants
+                            were
+                            used to transport building materials. Some 22,000 labourers, painters, embroidery artists
+                            and
+                            stonecutters
+                            were
+                            used.The translucent white marble was brought from Makrana, Rajasthan, the jasper from the
+                            Punjab region,
+                            jade
+                            and
+                            crystal from China. The turquoise was from Tibet and the Lapis lazuli from Afghanistan,
+                            while
+                            the sapphire
+                            came
+                            from
+                            Sri Lanka and the carnelian from Arabia. In all, 28 types of precious and semi-precious
+                            stone
+                            were inlaid
+                            into
+                            the
+                            white marble.</p>
+                        <p>According to the legend, Shah Jahan decreed that anyone could keep the bricks taken from the
+                            scaffold, and
+                            thus
+                            it
+                            was dismantled by peasants overnight.A 15-kilometre (9.3 mi) tamped-earth ramp was built to
+                            transport marble
+                            and
+                            materials to the construction site and teams of 20 or 30 oxen pulled the blocks on specially
+                            constructed
+                            wagons.An
+                            elaborate post-and-beam pulley system was used to raise the blocks into the desired
+                            position.
+                            Water was
+                            drawn
+                            from
+                            the river by a series of purs, an animal-powered rope and bucket mechanism, into a large
+                            storage
+                            tank and
+                            raised
+                            to
+                            a large distribution tank. It was passed into three subsidiary tanks, from which it was
+                            piped to
+                            the
+                            complex.</p>
+                        <p>The plinth and tomb took some 12 years to complete. The remaining parts of the complex took
+                            an
+                            additional 10
+                            years
+                            and were completed in order of minarets, mosque and jawab, and gateway. Since the complex
+                            was
+                            built in
+                            stages,
+                            discrepancies exist in completion dates due to differing opinions on "completion".
+                            Construction
+                            of the
+                            mausoleum
+                            itself was essentially completed by 1643 while work on the outlying buildings continued for
+                            years. Estimates
+                            of
+                            the
+                            cost of construction vary due to difficulties in estimating costs across time. The total
+                            cost at
+                            the time
+                            has
+                            been
+                            estimated to be about ₹ 32 million, which is around ₹ 52.8 billion ($827 million US) based
+                            on
+                            2015 values.
+                        </p>
+                    </div>
+                </div>
+                <div id="qutub">
+                    <div class="topdiv">
+                        <img class="timg p4" src="images/QutubMinar/p4.jpg" style="opacity: 0;">
+                        <img class="timg p3" src="images/QutubMinar/p3.jpg" style="opacity: 0;">
+                        <img class="timg p2" src="images/QutubMinar/p2.jpg" style="opacity: 0;">
+                        <img class="timg p1" src="images/QutubMinar/p1.jpg">
+                        <div class="overlay"></div>
+                        <div class="des"><span>The Qutub minar</span><br>making it the tallest minaret in the world
+                            built of bricks.
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="content">
+                        <p>The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower"
+                            that forms part of
+                            the Qutb complex, which lies at the site of Delhi’s oldest fortified city, Lal Kot, founded
+                            by the Tomar
+                            Rajputs. It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India. It
+                            is one
+                            of the most visited tourist spots in the city, mostly built between 1199 and 1220.</p>
+                        <p>It can be compared to the 62-metre all-brick Minaret of Jam in Afghanistan, of c. 1190, which
+                            was constructed
+                            a decade or so before the probable start of the Delhi tower. The surfaces of both are
+                            elaborately
+                            decorated with inscriptions and geometric patterns. The Qutb Minar has a shaft that is
+                            fluted with "superb
+                            stalactite bracketing under the balconies" at the top of each stage. In general, minarets
+                            were
+                            slow to be used in India and are often detached from the main mosque where they exist.</p>
+                        <br>
+                        <span class="sticky"># A Synthesis of South Asian and Islamic Architecture</span><br>
+                        <p>This victory tower is a symbol of the synthesis of traditional Islamic architecture and
+                            Southwestern Asian
+                            design. Elizabeth Lambourn’s Islam Beyond Empires: Mosques and Islamic Landscapes in India
+                            and the Indian
+                            Ocean studies the introduction of Islam in South Asia and how the region influenced the
+                            Islamic religious
+                            architecture. These newly arrived Muslims from the Islamic West escaped the Mongol Empire
+                            and emigrated
+                            to India, where they constructed religious centers. The Qutb Minar serves as a central
+                            marker to these new
+                            Muslim communities as well as being a reminder of Islam's presence in the area. The
+                            architecture of the
+                            minaret varies greatly from that of the typical style and design of the mosques constructed
+                            in the Middle
+                            East. The style of these structures is heavily influenced by the local architecture such as
+                            the Indic
+                            temples. This affected the different materials, techniques, and decoration that were used in
+                            the
+                            construction of the Qutb Minar.</p>
+                        <p>The minaret is unique in that historically, these tower minarets were uncommon in South
+                            Asian-Islamic design
+                            until the 17th century. This lag is due to the slow adoption of the typical Middle Eastern
+                            style in
+                            India. It is also detached from the main mosque, showcasing how the native culture affected
+                            the design
+                            of a Middle Eastern structure. The Qutb Minar is seen as the "earliest and best example of a
+                            fusion or
+                            synthesis of Hindu-Muslim traditions" according to Ved Parkash in his essay The Qutb Minar
+                            from Contemporary
+                            and Near Contemporary Sources. Like many mosques built in South Asia during this time
+                            period, the
+                            minaret was constructed by Hindu laborers and craftsmen but overseen by Muslim architects.
+                            This led to a
+                            construction that synthesized both Hindu and Islamic religious architecture. Since the
+                            craftsmen were Hindu
+                            and unfamiliar with the Quran, the inscriptions are a compilation of disarranged Quranic
+                            texts and other
+                            Arabic expressions.</p>
+                        <span class="sticky"># History</span><br>
+                        <p>The Qutb Minar was built over the ruins of the Lal Kot, the citadel of Dhillika. Qutub Minar
+                            was begun
+                            after the Quwwat-ul-Islam Mosque. Drawing references from their Ghurid homeland,
+                            Qutub-ud-Din Aibak and
+                            Shamsu’d-Din Iltutmish constructed a minar (minaret) at the south-eastern corner of the
+                            Quwwatu’l-Islam
+                            between 1199 and 1503.</p>
+                        <p>It is usually thought that the tower is named for Qutb-ud-din Aibak, who began it. It is also
+                            possible that
+                            it is named after Khwaja Qutbuddin Bakhtiar Kaki a 13th-century sufi saint, because
+                            Shamsuddin Iltutmish was
+                            a devotee of his.</p>
+                        <p>The Minar is surrounded by several historically significant monuments of the Qutb complex.
+                            Quwwat-ul-Islam
+                            Mosque, to the north-east of the Minar was built by Qutub-ud-Din Aibak in A.D. 1199. It is
+                            the earliest
+                            extant - mosque built by the Delhi Sultans. It consists of a rectangular courtyard enclosed
+                            by cloisters,
+                            erected with the carved columns and architectural members of 27 Jain and Hindu temples,
+                            which were
+                            demolished by Qutub-ud-Din Aibak as recorded in his inscription on the main eastern
+                            entrance. Later, a
+                            lofty arched screen was erected, and the mosque was enlarged, by Shams-ud- Din Itutmish
+                            (A.D. 1210-35) and
+                            Ala-ud-Din Khalji. The Iron Pillar in the courtyard bears an inscription in Sanskrit in
+                            Brahmi script of
+                            fourth century A.D., according to which the pillar was set up as a Vishnudhvaja (standard of
+                            god Vishnu) on
+                            the hill known as Vishnupada in memory of a mighty king named Chandra.</p>
+                        <p>The mosque complex is one of the earliest that survives in the Indian subcontinent.
+                            The nearby pillared cupola known as "Smith's Folly" is a remnant of the tower's 19th century
+                            restoration,
+                            which included an ill-advised attempt to add some more stories.</p>
+                        <p>In 1505, an earthquake damaged Qutub Minar; it was repaired by Sikander Lodi. On 1 September
+                            1803, a major
+                            earthquake caused serious damage. Major Robert Smith of the British Indian Army renovated
+                            the tower in 1828
+                            and installed a pillared cupola over the fifth story, creating a sixth. The cupola was taken
+                            down in 1848,
+                            under instructions from The Viscount Hardinge, who was the Governor General of India. at the
+                            time. It was
+                            reinstalled at ground level to the east of Qutb Minar, where it remains. This is known as
+                            "Smith's
+                            Folly".
+                            It was added to the list of World Heritage Site by UNESCO in 1993.</p><br>
+                        <span class="sticky"># The Ghurids</span><br>
+                        <p>The construction of the Qutb Minar was planned and financed by the Ghurids, who emigrated to
+                            India and
+                            brought Islam with them. The Ghurids, historically known as the Shansabanis, were a clan of
+                            Tajik origin
+                            that hailed from Ghur, the mountainous region of modern-day western Afghanistan. In the late
+                            eleventh
+                            century to the early twelfth century, the different sects of this nomadic clan united,
+                            losing its nomadic
+                            culture. During this time, they also converted to Islam.</p>
+                        <p>They then expanded into modern-day India and quickly took control of a substantial part of
+                            the country.
+                            The Ghurids annexed the Multan and Uch in the western Punjab in 1175-76, the northwestern
+                            regions around
+                            Peshawar in 1177, and the region of Sindh in 1185-86. In 1193, Qutb al-Din Aibek conquered
+                            Delhi and
+                            implemented a Ghurid governorship in the province, and the congregational mosque, the Qutb
+                            Minar complex,
+                            was founded in 1193. In the past, scholars believed that the complex was constructed to
+                            promote a
+                            conversion to Islam amongst the Ghurids' new subjects as well as a symbol of the Ghurids'
+                            adherence to a
+                            socio-religious system. There is now new information to suggest that conversion to Islam was
+                            not a top
+                            priority of the new annexes and instead the Ghurid governors sought to make a synthesis of
+                            the local culture
+                            and Islam through negotiation.</p><br>
+                        <span class="sticky"># The Patrons and Architects</span><br>
+                        <p>Qutb-ud-din Aibak, a deputy of Muhammad of Ghor, who founded the Delhi Sultanate after
+                            Muhammad of Ghor's
+                            death, started construction of the Qutb Minar's first story in 1199. Aibak's successor and
+                            son-in-law
+                            Shamsuddin Iltutmish completed a further three stories. After a lightning strike in 1369
+                            damaged the
+                            then top story, the ruler at the time, Firuz Shah Tughlaq, replaced the damaged story and
+                            added one more.
+                            Sher Shah Suri also added an entrance while he was ruling and the Mughal emperor Humayun was
+                            in exile.
+                        </p><br>
+                        <span class="sticky"># Architecture</span><br>
+                        <p>Pesrian-Arabic and Nagari in different sections of the Qutb Minar reveal the history of its
+                            construction and
+                            the later restorations and repairs by Firoz Shah Tughluq (1351–88) and Sikandar Lodi
+                            (1489–1517).</p>
+                        <p>The height of Qutb Minar is 72.5 meters, making it the tallest minaret in the world built of
+                            bricks.
+                            The tower tapers, and has a 14.3 metres (47 feet) base diameter, reducing to 2.7 metres (9
+                            feet) at the top
+                            of the peak. It contains a spiral staircase of 379 steps.</p>
+                        <p>The whole tower contains a spiral staircase of 379 steps. At the foot of the tower is the
+                            Quwat Ul Islam
+                            Mosque. The Minar tilts just over 65 cm from the vertical, which is considered to be within
+                            safe limits.
+                        </p>
+                        <p>Qutb Minar was an inspiration and prototype for many minarets and towers built. The Chand
+                            Minar and Mini
+                            Qutub Minar bear resemblance to the Qutb Minar and inspired from it.</p>
+                        <span class="sticky"># Controversy</span><br>
+                        <p>On 14 November 2000, Delhi newspapers reported that the Hindu nationalist groups, Vishva
+                            Hindu Parishad and
+                            Bajrang Dal, planned to host a yajna, a ritualistic Hindu ceremony related to cleansing or
+                            purification, at
+                            the Qutub Minar complex where the minaret is located. The Delhi police detained 80 activists
+                            led by Ram
+                            Krishan Gaur that were located by the Qutb Minar and were stopped from performing the yajna
+                            inside the
+                            tower. Due to a police barricade, the activists instead performed the ritual on the streets
+                            outside the
+                            mosque complex. Since the spolia of Jain and Hindu temples were used to construct the
+                            minaret, the
+                            right-wing Hindu groups believed that they needed to perform a cleansing at the complex in
+                            order to free the
+                            Hindu icons that were "trapped" in the minaret and the mosque complex.</p>
+                        <p>On 18 May 2022, a former Regional Director of Archaeological Survey of India, Dharamveer
+                            Sharma, has claimed
+                            that Qutb Minar was built by Raja Vikramaditya in the fifth century to observe the changing
+                            position of the
+                            sun.</p>
+                        <p>On 21 May 2022, The Secretary at the Ministry of Culture, Govind Mohan, took the decision to
+                            conduct
+                            excavation and iconography of idols found at Qutub Minar. The Ministry has now asked the ASI
+                            to submit an
+                            excavation report. Excavation can be started in the south of the minaret at a distance of 15
+                            meters from the
+                            mosque.</p><br>
+                        <span class="sticky"># Accidents</span><br>
+                        <p>Before 1976, the general public was allowed access to the first floor of the minaret, via the
+                            internal
+                            staircase. Access to the top was stopped after 2000 due to suicides. On 4 December 1981, the
+                            staircase
+                            lighting failed. Between 300 and 400 visitors stampeded towards the exit. 45 were killed and
+                            some were
+                            injured. Most of these were school children. Since then, the tower has been closed to the
+                            public. Since
+                            this incident the rules regarding entry have been stringent.</p><br>
+                        <span class="sticky"># In popular culture</span><br>
+                        <p>Bollywood actor and director Dev Anand wanted to shoot the song "Dil Ka Bhanwar Kare Pukar"
+                            from his film
+                            Tere Ghar Ke Samne inside the Minar. However, the cameras in that era were too big to fit
+                            inside the tower's
+                            narrow passage, and therefore the song was shot inside a replica of the Qutb Minar.</p>
+                        <p>The site served as the Pit Stop of the second leg of the second series of The Amazing Race
+                            Australia.
+                            A picture of the minaret is featured on the travel cards and tokens issued by the Delhi
+                            Metro Rail
+                            Corporation. A recently launched start-up in collaboration with the Archaeological Survey of
+                            India has made
+                            a 360o walkthrough of Qutb Minar available.</p>
+                        <p>Ministry of Tourism recently gave seven companies the 'Letters of Intent' for fourteen
+                            monuments under its
+                            'Adopt a Heritage Scheme.' These companies will be the future 'Monument Mitras.' Qutb Minar
+                            has been chosen
+                            to part of that list.</p>
+                    </div>
+                </div>
+                <div id="rani">
+                    <div class="topdiv">
+                        <img class="timg p4" src="images/RaniKiVav/p4.jpg" style="opacity: 0;">
+                        <img class="timg p3" src="images/RaniKiVav/p3.jpg" style="opacity: 0;">
+                        <img class="timg p2" src="images/RaniKiVav/p2.jpg" style="opacity: 0;">
+                        <img class="timg p1" src="images/RaniKiVav/p1.jpg">
+                        <div class="overlay"></div>
+                        <div class="des"><span>Rani Ki Vav</span><br>is a single-component, water management system
+                            divided into seven
+                            levels of stairs and sculptural panels of high artistic and aesthetic quality.</div>
+                    </div>
+                    <br><br><br>
+                    <div class="content">
+                        <p>Rani Ki Vav (lit. 'The Queen's Stepwell') is a stepwell situated in the town of Patan in
+                            Gujarat, India. It
+                            is located on the banks of the Saraswati River. Its construction is attributed to Udayamati,
+                            the spouse of
+                            the 11th-century Chaulukya king Bhima I. Silted over, it was rediscovered in the 1940s and
+                            restored in the
+                            1980s by the Archaeological Survey of India. It has been listed as one of the UNESCO World
+                            Heritage Sites in
+                            India since 2014.</p>
+                        <p>The finest and one of the largest examples of its kind, this stepwell is designed as an
+                            inverted temple
+                            highlighting the sanctity of water. It is divided into seven levels of stairs with
+                            sculptural panels. These
+                            panels have more than 500 principal sculptures and over a thousand minor ones that combine
+                            religious and
+                            symbolic imagery.</p><br>
+                        <span class="sticky"># History</span><br>
+                        <p>Rani ki vav was constructed during the rule of the Chaulukya dynasty. It is located on the
+                            banks of Saraswati
+                            river. Prabandha-Chintamani, composed by the Jain monk Merutunga in 1304, mentions:
+                            "Udayamati, the daughter
+                            of Naravaraha Khengara, built this novel stepwell at Shripattana (Patan) surpassing the
+                            glory of the
+                            Sahasralinga Tank". According to it, the stepwell was commissioned in 1063 and was completed
+                            after 20 years.
+                            It is generally assumed that it was built in the memory of Bhima I (r. c. 1022 – 1064) by
+                            his queen
+                            Udayamati and probably completed by Udayamati and Karna after his death but whether she was
+                            a widow when she
+                            commissioned it is disputed. Commissariat puts the date of construction to 1032 based on the
+                            architectural
+                            similarity to Vimalavasahi temple on Mount Abu built in the same year.</p>
+                        <p>The stepwell was later flooded by the Saraswati river and silted over. In 1890s, Henry
+                            Cousens and James
+                            Burgess visited it when it was completely buried under the earth and only well shaft and few
+                            pillars were
+                            visible. They described it as being a huge pit measuring 87 metres (285 ft). In Travels in
+                            Western India,
+                            James Tod mentioned that the material from the stepwell was reused in the other stepwell
+                            built in modern
+                            Patan, probably Trikam Barot ni Vav (Bahadur Singh stepwell). In the 1940s, excavations
+                            carried out under
+                            the Baroda State revealed the stepwell. In 1986, a major excavation and restoration was
+                            carried out by the
+                            Archaeological Survey of India (ASI). An image of Udayamati was also recovered during the
+                            excavation. The
+                            restoration was carried out from 1981 to 1987.</p>
+                        <p>Rani ki vav has been declared a Monument of National Importance and protected by the ASI. It
+                            was added to the
+                            list of UNESCO's World Heritage Sites on 22 June 2014. It was named India's "Cleanest Iconic
+                            Place" at the
+                            2016 Indian Sanitation Conference.</p><br>
+                        <span class="sticky"># Architecture</span><br>
+                        <p>Rani ki vav is considered as the finest and one of the largest example of stepwell
+                            architecture in Gujarat.
+                            It was built at the height of craftsmens’ ability in stepwell construction and the
+                            Maru-Gurjara architecture
+                            style, reflecting mastery of this complex technique and beauty of detail and proportions.
+                            The architecture
+                            and sculptures are similar to the Vimalavasahi temple on Mount Abu and Sun temple at
+                            Modhera.</p>
+                        <p>It is classified as a Nanda-type stepwell. It measures approximately 65 metres (213 ft) long,
+                            20 metres (66
+                            ft) wide and 28 metres (92 ft) deep. The fourth level is the deepest and leads into a
+                            rectangular tank 9.5
+                            metres (31 ft) by 9.4 metres (31 ft), at a depth of 23 metres (75 ft). The entrance is
+                            located in the east
+                            while the well is located at the westernmost end and consists of a shaft 10 metres (33 ft)
+                            in diameter and
+                            30 metres (98 ft) deep. The stepwell is divided into seven levels of stairs which lead down
+                            to deep circular
+                            well. A stepped corridor is compartmentalized at regular intervals with pillared multistory
+                            pavilions. The
+                            walls, pillars, columns, brackets and beams are ornamented with carvings and scroll work.
+                            The niches in the
+                            side walls are ornamented with beautiful and delicate figures and sculptures. There are 212
+                            pillars in the
+                            stepwell.</p>
+                        <p>There are more than 500 principal sculptures and over a thousand minor ones often referencing
+                            literary works
+                            in combination with religious, symbolic and secular imagery. The ornamentation of stepwell
+                            depicts the
+                            entire universe inhabited by gods and goddesses; celestial beings; men and women; monks,
+                            priests and laity;
+                            animals, fishes and birds including seen and unseen ones; as well as plants and trees.</p>
+                        <p>The stepwell is designed as an underground shrine or inverted temple. It has spiritual
+                            significance and
+                            represents the sanctity of water. Sculptures in the stepwell depict numerous Hindu deities
+                            including Brahma,
+                            Vishnu, Shiva, Ganesha, Kubera, Lakulisha, Bhairava, Surya, Indra and Hayagrivaand goddesses
+                            (Devi). The
+                            sculptures associated with Vishnu outnumber all other deities mentioned above and include
+                            Sheshashayi Vishnu
+                            (Vishnu reclining on the thousand-hooded snake Shesha in the celestial ocean), Vishwarupa
+                            Vishnu (Cosmic
+                            form of Vishnu), twenty-four forms as well as Dashavatara (ten incarnations) of Vishnu.</p>
+                        <p>The sculptures of deities with their families such as Brahma-Savitri, Uma-Maheshwar and
+                            Lakshmi-Narayan are
+                            there. Notable among other sculptures are Ardhanarishwara as well as large number of
+                            goddesses such as
+                            Lakshmi, Parvati, Saraswati, Chamunda, Durga/Mahishasurmardini with twenty hands,
+                            Kshemankari, Suryani and
+                            Saptamatrikas. There are images of Navagraha (nine planets) as well.</p>
+                        <p>There are a large number of celestial beings (Apsaras). One sculpture of an Apsara depicts
+                            either applying
+                            lipstick to her lips or chewing on aromatic twig while a man is attending her feet. On the
+                            northern side of
+                            the third storey pavilion, there is a sculpture of an Apsara warding off a monkey clinging
+                            to her leg and
+                            pulling her. At her feet, there is a nude female with a snake around her neck. A sculpture
+                            of Nagkanya (a
+                            serpent princess) with long hair and a swan, as well as sculptures of celestial dancers in
+                            classical dance
+                            positions are there.</p>
+                        <p>There are large number of sculptures portraying women in their everyday life and activities.
+                            One sculpture
+                            depicts a woman combing her hair, adjusting her earring and looking at herself in the
+                            mirror. Other
+                            sculptures include a woman writing a letter, a young woman with a scorpion climbing her
+                            right leg and her
+                            clothes sliding off unknowingly, a young woman pulling a beard of a dwarf-like man, a woman
+                            with fish plate
+                            in her hands with a snake encircling her leg and reaching out to fish. One sculpture depicts
+                            a young woman
+                            coming out of her bath with wet hair and a swan catching droplets of water falling from her
+                            hair like
+                            pearls. The women in these sculptures are adorned with jewelry including bangles, earrings,
+                            necklaces, waist
+                            girdles, anklets and others as well as with elegant clothes and well combed hair. The
+                            variety of expressions
+                            and emotions are depicted in them. They represent beauty as well as love in its sublime and
+                            seductive forms.
+                            There are sculptures representing maternal love such as a woman holding her child and
+                            pointing to the moon
+                            to divert his attention, a woman raising her child high to let him pick a mango from tree,
+                            and a woman in a
+                            mango grove accompanied by children.</p>
+                        <p>There are gradually increasing cantilevered brackets in the well shaft which are profusely
+                            ornamented.
+                            Kalpavriksha carvings on the wall represent fertility and nature worship while kirtimukhas
+                            and makaras adorn
+                            the basements and capitals of pillars. There are latticework patterns and designs resembling
+                            geometric local
+                            textile designs, and traditionalPatola are featured on the wall at the stepwell's northern
+                            entrance. These
+                            may have been adapted from wood carvings and ceilings seen in temples. Figures of horses,
+                            elephants and
+                            lions decorate pillars and basement moldings.</p><br>
+                    </div>
+                </div>
+                <div id="sun">
+                    <div class="topdiv">
+                        <img class="timg p4" src="images/SunTempleM/p4.jfif" style="opacity: 0;">
+                        <img class="timg p3" src="images/SunTempleM/p3.jpg" style="opacity: 0;">
+                        <img class="timg p2" src="images/SunTempleM/p2.jfif" style="opacity: 0;">
+                        <img class="timg p1" src="images/SunTempleM/p1.jpg">
+                        <div class="overlay"></div>
+                        <div class="des"><span>Sun Temple, Modhera</span><br>is a Hindu temple dedicated to the solar
+                            deity Surya
+                            located at Modhera village of Mehsana district, Gujarat, India.</div>
+                    </div>
+                    <br><br><br>
+                    <div class="content">
+                        <p>The Sun Temple of Modhera is a Hindu temple dedicated to the solar deity Surya located at
+                            Modhera village of
+                            Mehsana district, Gujarat, India. It is situated on the bank of the river Pushpavati. It was
+                            built after
+                            1026-27 CE during the reign of Bhima I of the Annhilwara Chalukya / SOLANKI dynasty. No
+                            worship is offered
+                            now and is protected monument maintained by Archaeological Survey of India. The temple
+                            complex has three
+                            components: Gūḍhamanḍapa, the shrine hall; Sabhamanḍapa, the assembly hall and Kunḍa, the
+                            reservoir. The
+                            halls have intricately carved exterior and pillars. The reservoir has steps to reach the
+                            bottom and numerous
+                            small shrines.</p><br>
+                        <span class="sticky"># History</span><br>
+                        <p>The shrine proper of the Sun Temple was built during the reign of Bhima I of Chaulukya
+                            dynasty. Earlier,
+                            during 1024–1025, Mahmud of Ghazni had invaded Bhima's kingdom, and a force of around 20,000
+                            soldiers had
+                            unsuccessfully tried to check his advance at Modhera. Historian A. K. Majumdar theorizes
+                            that the Sun Temple
+                            might have been built to commemorate this defense. On a block in western wall of cella,
+                            there is an
+                            inscription "Vikram Samvat 1083" upside down carelessly incised in Devnagari script which
+                            correspond to
+                            1026-1027 CE. No other date is found. As the inscription is upside down, it evidences the
+                            destruction and
+                            reconstruction of the cella. Due to the position of the inscription, it is not firmly
+                            considered as the date
+                            of construction. On the stylistic ground, it is known that the Kunda with its corner shrines
+                            was built
+                            earlier at the beginning of the 11th century. The inscription is rather considered as the
+                            date of
+                            destruction by Ghazni instead of the construction. Soon after Bhima had returned to the
+                            power. So the temple
+                            proper, the miniature and the niche shrines in the tank were built shortly after 1026 CE.
+                            The dancing hall
+                            was added much later in the third quarter of the 12th century along with the gateways, the
+                            porch of the
+                            temple proper and the doorframes of the temple and the cella during the reign of the Karna.
+                        </p>
+                        <p>The temple is built on 23.6° latitude (approximately near Tropic of Cancer).The place was
+                            later known as Sita
+                            ni Chauri and Ramkund locally. No worship is offered here now. The temple is the Monument of
+                            National
+                            Importance and is maintained by the Archeological Survey of India.</p>
+                        <p>It was added to the tentative list of the UNESCO World Heritage Site in December 2022.</p>
+                        <br>
+                        <span class="sticky"># Architecture</span><br>
+                        <p>The temple complex is built in Māru-Gurjara style (Chaulukya style). The temple complex has
+                            three axially
+                            aligned components; the shrine proper (garbhagriha) in a hall (gudhamandapa), the outer or
+                            assembly hall
+                            (sabhamandapa or rangamandapa) and a sacred reservoir (kunda).</p>
+                        <p>The Sabhamandapa is not in continuation with Gudhamandapa but is placed little away as a
+                            separate structure.
+                            Both are built on a paved platform. Their roofs have collapsed long ago leaving behind a few
+                            lower-most
+                            courses. Both roofs are 15' 9" in diameter but are constructed differently. The platform or
+                            plinth is
+                            inverted lotus-shaped.</p>
+                        <b style="color: white;">Gudhamandapa and Garbhagriha</b><br>
+                        <b style="color: white;">Base moldings</b>
+                        <p>The Gudhamandapa measures 51 feet 9 inches by 25 feet 8 inches. It is almost equally divided
+                            into
+                            Gudhamandapa, the hall and Garbhgriha, the shrine proper. Both are rectangular in plan with
+                            one projection
+                            on each of the smaller sides and two projections on each of the longer sides. These
+                            projections on the
+                            smaller sides form the entrance and the back of the shrine. The three projections of the
+                            outer wall of
+                            Gudhamandapa had windows on each side and the east projection had the doorway. These windows
+                            had perforated
+                            stone screens; the northern is in ruins and the southern is missing. Pradakshinamarga is
+                            formed by the
+                            passage between the walls of Garbhgriha and the outer walls of Gudhamandapa. The roof of
+                            passage has stones
+                            slabs carved with rosettes. The Shikhara of it no longer exists.</p>
+                        <p>The Garbhagriha, the shrine proper or sanctum sanctorum is square measuring 11 feet from
+                            inside.
+                            The shrine had two cells; a cell below the level of the upper cell. The floor of the upper
+                            cell is now
+                            fallen which once housed the image of a deity. The seat of the image is now in a pit. The
+                            lower cell was
+                            probably used for storage.</p>
+                        <p>The walls inside the shrine are plain and the outer wall is decorated. The doorway has carved
+                            figures of
+                            seated Surya in panels surrounded by dancers and amorous couples. All figures are mutilated
+                            and the images
+                            on the door-lintel are completely destroyed.</p>
+                        <p>The sanctum sanctorum is designed in a way that the first rays of rising sun lit up the image
+                            of Surya during
+                            solar equinox days and on summer solstice day, the sun shines directly above the temple at
+                            noon casting no
+                            shadow.</p>
+                        <p>The outer walls of the shrine is highly decorated. The base and walls of the shrine and hall
+                            are divided into
+                            several stretches with unique carvings. the Pitha or adhisthana, the base has the two square
+                            members called
+                            Bhat followed by a cyma recta carving (lower part convex and upper part concave). It is
+                            followed by padma or
+                            padmaka, the molding in form of an inverted lotus. The next is antarita, a fillet or an
+                            astragal with a
+                            sharp edge between two recesses. Above this is patta having thin molding called chhaja at
+                            its lower edge.
+                            The next is another chhaja separated by neck, alinga. The next broad band, patti, is
+                            gajathara carved with
+                            elephants. The following band narathara has figures of men in different attitudes.</p>
+                        <b style="color: white;">Mandovara or wall moldings</b>
+                        <p>Mandovara, the wall moldings start with kumbha, a pitcher. It has a broad undecorated band at
+                            the lower part
+                            while the middle part is decorated with oval discs. It is followed by kalasha, a pitcher.
+                            The next is a
+                            broad band with chaitya-windows called kevala followed by similar called manchi. These two
+                            bands are
+                            separated by a deep band. There is a thin fillet above which the major paneled face of the
+                            wall called
+                            jangha exist. These panels are decorated with figures of gods but the figures of Surya are
+                            placed
+                            prominently than others as the temple is dedicated to him. Other panels are decorated with
+                            dancers and other
+                            figures.</p>
+                        <p>The figures of Surya are prominently carved on three niches of shrine proper as well as on
+                            each side of three
+                            windows in the outer wall of Gudhamandapa. The figures of Surya is in standing position with
+                            two arms
+                            holding lotuses and driven by seven horses. It has some Persian influences. The walls have
+                            12 niches showing
+                            the different aspects of Surya in each month. Other figures include eight Dikpals,
+                            Vishwakarma, Varuna,
+                            Agni, Ganesha, Saraswati.</p>
+                        <p>Every figure in the panel has a small cornice over it surmounted with a triangular pediment
+                            consisting of
+                            chaitya-a window which is called udgam. The next projecting band with chaitya-window and
+                            kirtimukha is
+                            called malakval. The topmost is the major cornice called chhajli.
+                            This is followed by shikhara which no longer exist. The Vimana had horizontal geometrical
+                            and figurative
+                            bands which rising to create the Mount Meru-like shikhara. The central spire had Urushringa,
+                            the miniature
+                            shrines. It is judged by the shrines on the steps of Kunda.</p>
+                        <b style="color: white;">Mandapa</b>
+                        <p>The Mandapa, a hall was roofed by a dome which probably rose in a concentric manner. It is
+                            supported by eight
+                            principal pillars below arranged in an octagon, four pillars in front of shrine proper and
+                            two each in the
+                            recesses of windows and door.</p>
+                        <b style="color: white;">Sabhamandapa</b>
+                        <p>Sabhamandapa or Rangamandapa, the assembly hall or dancing hall is parallelogram in plan with
+                            rows of pillars
+                            opening entrance on each side diagonally. The extensively carved exterior has a series of
+                            recessed corners
+                            giving an impression of the star-like plan of it. There are 52 intricately carved pillars.
+                            Madhusudan Dhaky
+                            has suggested that the sabhamandapa may have been later addition based on style and
+                            construction.</p>
+                        <b style="color: white;">Base moldings</b>
+                        <p>The pitha is almost similar to the Gudhamandapa but smaller as two courses of fillets are
+                            omitted. The padma
+                            is carved richly here with floral ornamentation.</p>
+                        <b style="color: white;">Wall moldings</b>
+                        <p>Above the Narathara, there is a band with figures of dancers and gods known as rajasena. The
+                            next is vedi
+                            which correspond to jangha of mandovara decorated with large panels of gods, goddesses, and
+                            floral designs.
+                            The next is cornice called asinot. It followed by kakshasana which slopes outwards and forms
+                            the back-rests
+                            of the bench, asana which runs around the hall. There are erotic figures on it interrupted
+                            by rail-patterns.
+                        </p>
+                        <b style="color: white;">Ceiling and torana</b>
+                        <p>The roof was in shape of the stepped pyramid but it no longer exists. Inside, the
+                            walnut-shaped ceiling rises
+                            in tiers which has numerous floral girdles. It is 23 feet high. It is supported by pillars
+                            arranged in an
+                            octagon. These pillars have stilts that support the lintels. Torana or the decorated cusped
+                            arches arise
+                            from the lower brackets of the pillars and touch the lintels in middle. There are two types;
+                            semicircular
+                            and triangular. The semicircular arches have cusped arches with tips while triangular arches
+                            have a round
+                            apex and wavy sides. Both types have a broad band decorated with figures and tips which are
+                            now defaced and
+                            damaged. The lower brackets has Makara which gives the name of Makara-Torana while
+                            decoration gives name of
+                            chitra-torana.</p>
+                        <b style="color: white;">Pillars</b>
+                        <p>The pillars of Sabhamandapa and Gudhamandapa are of two types; short and tall. The short
+                            pillars rest on the
+                            walls and support the roof. The tall pillars rise from the floor.</p>
+                        <b style="color: white;">Short pillars</b>
+                        <p>The shaft is square in shape to half of its height followed by the vase and then followed by
+                            an octagonal
+                            shaft. It is surmounted by a capital and a bracket. The square part has a floral design in a
+                            circle on each
+                            side of the face. The vase is decorated similarly on its corners. The octagonal part has
+                            four bands; the
+                            topmost has kirtimukha. The capital has three annulets.</p>
+                        <b style="color: white;">Tall pillars</b>
+                        <p>They arise from square or octagonal base, kumbhi, with triangular ornamentation on each face.
+                            Above it is
+                            kalasha. It is followed by a deep band and the next is kevala decorated with
+                            chaitya-windows. the next is
+                            kirtimukha. The next is triangular pediment with chaitya-windows.</p>
+                        <p>The next is the beginning of the shaft. It is first decorated with standing figures, mostly
+                            dancers, on all
+                            eight faces enclosed in ringed pilasters. The next band with scenes of men and beasts is
+                            separated from it
+                            by the round pillow-like band. It is followed by a still smaller band with sixteen standing
+                            human figures
+                            separated by small annulet below. The next is a band of leaves. Then the shaft becomes
+                            circular and had
+                            three or four bands having a row of male warriors, lozenges, circles and kirtimukha at last.
+                            The kirtimukhas
+                            are separated by chain and bell ornamentation.</p>
+                        <p>It follows capital similar to small pillars crowned with makara brackets if eight stilted
+                            pillar and dwarfs
+                            in the rests. the eight stilted pillars have one more shaft and similar type of capital
+                            which is crowned
+                            with brackets of volutes and pendant leaves.</p>
+                        <b style="color: white;">Stepwell</b>
+                        <p>The stepwell on the west of Kunda has one entrance and two pavilion-towers. It is moderately
+                            ornamented. The
+                            door-frame has lotus and leaves and the ruchaka type pilasters indicate it belongs to 11th
+                            century. The
+                            small mandapa above the ground level and located on the second kuta of stepwell may belong
+                            to tenth century.
+                        </p>
+                        <span class="sticky"># Modhera dance festival</span><br>
+                        <p>The Tourism Corporation of Gujarat organises an annual three-day dance festival known as
+                            Uttarardha Mahotsav
+                            at the temple during the third week of January, following the festival of Uttarayan. The
+                            objective is to
+                            present classical dance forms in an atmosphere similar to that in which they were originally
+                            presented.</p>
+                        <span class="sticky"># In popular culture</span><br>
+                        <p>Letitia Elizabeth Landon's poetical illustration Hindoo and Mahommedan Buildings refers to a
+                            coloured
+                            engraving of "a splendid sculptured Portico of a Temple dedicated to Mahadeo, at Moondheyra
+                            in Guzerat" and
+                            in it she meditates upon the vastness of this structure. The original painting is by David
+                            Roberts.</p>
+                    </div>
+                </div>
+                <div id="fort">
+                    <div class="topdiv">
+                        <img class="timg p4" src="images/RedFort/p4.jpg" style="opacity: 0;">
+                        <img class="timg p3" src="images/RedFort/p3.jpg" style="opacity: 0;">
+                        <img class="timg p2" src="images/RedFort/p2.jpg" style="opacity: 0;">
+                        <img class="timg p1" src="images/RedFort/p1.jpg">
+                        <div class="overlay"></div>
+                        <div class="des"><span>The Red Fort</span><br>is a historical fort in the city of Agra in India.
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="content">
+                        <p>The Red Fort or Lal Qila is a historic fort in the Old Delhi neighbourhood of Delhi, India,
+                            that historically
+                            served as the main residence of the Mughal emperors. Emperor Shah Jahan commissioned
+                            construction of the Red
+                            Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. Originally red
+                            and white, its
+                            design is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal. The
+                            fort represents
+                            the peak in Mughal architecture under Shah Jahan and combines Persianate palace architecture
+                            with Indian
+                            traditions.</p>
+                        <p>The fort was plundered of its artwork and jewels during Nader Shah's invasion of the Mughal
+                            Empire in 1739.
+                            Most of the fort's marble structures were subsequently demolished by the British following
+                            the Indian
+                            Rebellion of 1857. The fort's defensive walls were largely undamaged, and the fortress was
+                            subsequently used
+                            as a garrison.</p>
+                        <p>On 15 August 1947, the first prime minister of India, Jawaharlal Nehru, raised the Indian
+                            flag above the
+                            Lahori Gate. Every year on India's Independence Day (15 August), the prime minister hoists
+                            the Indian
+                            tricolour flag at the fort's main gate and delivers a nationally broadcast speech from its
+                            ramparts.</p>
+                        <p>The Red Fort was designated a UNESCO World Heritage Site in 2007 as part of the Red Fort
+                            Complex.</p><br>
+                        <span class="sticky"># Etymology</span><br>
+                        <p>The name Red Fort is a translation of the Hindustani Lāl Qila (Hindi: लाल क़िला, Urdu: لال
+                            قلعہ), deriving
+                            from its red sandstone walls. Lal was derived from Hindustani language meaning "Red" and
+                            Qalàh derived from
+                            Arabic word meaning "Fortress". As the residence of the imperial family, the fort was
+                            originally known as
+                            the "Blessed Fort" (Qila-i-Mubārak).Agra Fort is also known as Lāl Qila.</p><br>
+                        <span class="sticky"># History</span><br>
+                        <p>Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided
+                            to shift his
+                            capital from Agra to Delhi. Originally red and white, Shah Jahan's favourite colours its
+                            design is credited
+                            to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal The fort lies along the
+                            Yamuna River,
+                            which fed the moats surrounding most of the walls. Construction began in the sacred Islamic
+                            month of
+                            Muharram, on 13 May 1638.Supervised by Shah Jahan, it was completed on 6 April 1648. Unlike
+                            other Mughal
+                            forts, the Red Fort's boundary walls are asymmetrical to contain the older Salimgarh
+                            Fort.The
+                            fortress-palace was a focal point of the city of Shahjahanabad, which is present-day Old
+                            Delhi. Shah Jahan's
+                            successor, Aurangzeb, added the Moti Masjid (Pearl Mosque) to the emperor's private
+                            quarters, constructing
+                            barbicans in front of the two main gates to make the entrance to the palace more circuitous.
+                        </p>
+                        <p>The administrative and fiscal structure of the Mughal dynasty declined after Aurangzeb, and
+                            the 18th century
+                            saw a degeneration of the palace. In 1712 Jahandar Shah became the Mughal Emperor. Within a
+                            year of
+                            beginning his rule, Shah was murdered and replaced by Farrukhsiyar. In 1739, Persian emperor
+                            Nadir Shah
+                            easily defeated the strong Mughal army of around 200,000 soldiers, plundering the Red Fort,
+                            including the
+                            Peacock Throne. Nadir Shah returned to Persia after three months, leaving a destroyed city
+                            and a weakened
+                            Mughal empire to Muhammad Shah. The internal weakness of the Mughal Empire made the Mughals
+                            only titular
+                            rulers of Delhi, and a 1752 treaty made the Marathas protectors of the throne at Delhi. The
+                            1758 Maratha
+                            victory at Sirhind aided by the Sikhs and successive defeat at Panipat placed them in
+                            further conflict with
+                            Ahmad Shah Durrani.</p>
+                        <p>In 1760, the Marathas removed and melted the silver ceiling of the Diwan-i-Khas to raise
+                            funds for the
+                            defence of Delhi from the armies of Ahmed Shah Durrani. In 1761, after the Marathas lost the
+                            third battle of
+                            Panipat, Delhi was raided by Ahmed Shah Durrani. Ten years later, the Marathas, acting on
+                            the behest and as
+                            mercenary of the exiled Emperor Shah Alam, recaptured Delhi from the Rohilla Afghans.
+                            Mahadji Scindia, the
+                            commander of Maratha army bowed to Mughal Emperor Shah Alam to demonstrate his submission to
+                            him. Thus, Shah
+                            Alam was restored to the throne.</p>
+                        <p>In 1764, the Jat ruler of Bharatpur, Maharaja Jawahar Singh (the son of Maharaja Suraj Mal)
+                            attacked Delhi
+                            and captured the Red Fort of Delhi on 5 February 1765. Two days later, after taking tribute
+                            from the
+                            Mughals, removed their armies from the fort and the Jats took away the throne of the
+                            Mughals, called the
+                            pride of the Mughals, and the doors of the Red Fort as a memorial, and this throne is today
+                            enhancing the
+                            beauty of the palaces of Deeg. The doors are located in the Lohagarh Fort of Bharatpur.</p>
+                        <p>In 1783 the Sikh Misl Karor Singhia, led by Baghel Singh, conquered Delhi and the Red Fort.
+                            Baghel Singh,
+                            Jassa Singh Ahluwalia and Jassa Singh Ramgarhia all allied with a 40,000 force and looted
+                            the area from
+                            Awadh to Jodhpur. After negotiations, Baghel Singh and his forces agreed to leave Delhi and
+                            reinstate the
+                            Mughal emperor Shah Alam II. The condition of their retreat included the construction of
+                            seven Sikh
+                            Gurdwaras in Delhi, including the Gurudwara Sis Ganj in Chandni Chowk.</p>
+                        <p>In 1788, a Maratha garrison occupied the Red Fort and Delhi alongside providing protection to
+                            the Mughal
+                            Emperor. Mahadji Scindia signed a treaty with the Sikhs where they were warned not to enter
+                            Delhi or ask for
+                            the Rakhi tribute. The fort came under the control of the East India Company following the
+                            Second
+                            Anglo-Maratha War in 1803.</p>
+                        <p>During the Second Anglo-Maratha War, forces of the East India Company defeated Maratha forces
+                            of Daulat Rao
+                            Scindia in the Battle of Delhi; this ended Maratha control over the city and their control
+                            of the Red Fort.
+                            After the battle, the British East India Company took over the administration of Mughal
+                            territories and
+                            installed a Resident at the Red Fort. The last Mughal emperor to occupy the fort, Bahadur
+                            Shah II, became a
+                            symbol of the 1857 rebellion against the British East India Company in which the residents
+                            of Shahjahanabad
+                            participated.</p>
+                        <p>Despite its position as the seat of Mughal power and its defensive capabilities, the Red Fort
+                            was not a site
+                            of an engagement during the 1857 uprising against the British. After the rebellion was
+                            defeated, Bahadur
+                            Shah II left the fort on 17 September and was apprehended by British forces. Bahadur Shah
+                            Zafar II returned
+                            to Red Fort as a British prisoner, was tried in 1858 and exiled to Rangoon on 7 October of
+                            that year. After
+                            the end of the rebellion, the British sacked the Red Fort before ordering its systemic
+                            demolition. 80% of
+                            the fort’s buildings were demolished as a result of this effort, including the stone screen
+                            that connected
+                            the pavilions along the fort’s river-facing façade, which was demolished. All furniture was
+                            removed or
+                            destroyed; the harem apartments, servants' quarters and gardens were demolished, and a line
+                            of stone
+                            barracks built in their place. Only the marble buildings on the east side at the imperial
+                            enclosure escaped
+                            complete destruction, although they were damaged by the demolition efforts. While the
+                            defensive walls and
+                            towers were relatively unharmed, more than two-thirds of the inner structures were
+                            demolished.</p>
+                        <p>Lord Curzon, Viceroy of India from 1899 to 1905, ordered repairs to the fort including
+                            reconstruction of the
+                            walls and the restoration of the gardens complete with a watering system.</p>
+                        <p>Most of the jewels and artwork located in the Red Fort were looted during Nadir Shah's
+                            invasion of 1747 and
+                            again after the Indian Rebellion of 1857 against the British. They were eventually sold to
+                            private
+                            collectors or the British Museum, the British Library and the Victoria and Albert Museum.
+                            For example, the
+                            jade wine cup of Shah Jahan and the crown of Bahadur Shah II are all currently located in
+                            London. Various
+                            requests for restitution have so far been rejected by the British government.</p>
+                        <p>1911 saw the visit of King George V and Queen Mary for the Delhi Durbar. In preparation for
+                            their visit, some
+                            buildings were restored. The Red Fort Archaeological Museum was moved from the drum house to
+                            the Mumtaz
+                            Mahal.</p>
+                        <p>The INA trials, also known as the Red Fort Trials, refer to the courts-martial of a number of
+                            officers of the
+                            Indian National Army. The first was held between November and December 1945 at the Red Fort.
+                        </p>
+                        <p>On 15 August 1947, the first prime minister of India, Jawaharlal Nehru raised the Indian
+                            national flag above
+                            the Lahore Gate.</p>
+                        <p>After Indian Independence, the site experienced few changes, and the Red Fort continued to be
+                            used as a
+                            military cantonment. A significant part of the fort remained under Indian Army control until
+                            22 December
+                            2003, when it was given to the Archaeological Survey of India for restoration. In 2009 the
+                            Comprehensive
+                            Conservation and Management Plan (CCMP), prepared by the Archaeological Survey of India
+                            under Supreme Court
+                            directions to revitalise the fort, was announced.</p><br>
+                        <span class="sticky"># Archaeological finds</span><br>
+                        <p>Archaeological excavations at the Red Fort have unearthed several Ochre Coloured Pottery
+                            culture artifacts
+                            dating from 2600 BCE to 1200 BCE.</p><br>
+                        <span class="sticky"># Modern era</span><br>
+                        <p>The Red Fort, the largest monument in Delhi, is one of its most popular tourist destinations
+                            and attracts
+                            thousands of visitors every year. It is a monument of national significance; every year on
+                            India's
+                            Independence Day (15 August), the prime minister of India hoists the country's flag at the
+                            Red Fort and
+                            delivers a nationally broadcast speech from its ramparts. The fort also appears on the back
+                            of the ₹500 note
+                            of the Mahatma Gandhi New Series of the Indian rupee.</p>
+                        <p>The major architectural features are in mixed condition; the extensive water features are
+                            dry. Some buildings
+                            are in fairly good condition, with their decorative elements undisturbed; in others, the
+                            marble inlaid
+                            flowers have been removed by looters. The tea house, although not in its historical state,
+                            is a working
+                            restaurant. The mosque and hammam or public baths are closed to the public, although
+                            visitors can peer
+                            through their glass windows or marble latticework. Walkways are crumbling, and public
+                            toilets are available
+                            at the entrance and inside the park. The Lahori Gate entrance leads to a mall with jewellery
+                            and craft
+                            stores. There is also a museum of "blood paintings", depicting young 20th-century Indian
+                            martyrs and their
+                            stories, an archaeological museum and an Indian war-memorial museum.</p><br>
+                        <span class="sticky"># Security</span><br>
+                        <p>To prevent terrorist attacks, security is especially strict around the Red Fort on the eve of
+                            Indian
+                            Independence Day. Delhi Police and paramilitary personnel keep a watch on neighbourhoods
+                            around the fort,
+                            and National Security Guard sharpshooters are deployed on high-rises near the fort. The
+                            airspace around the
+                            fort is a designated no-fly zone during the celebration to prevent air attacks, and safe
+                            houses exist in
+                            nearby areas to which the prime minister and other Indian leaders may retreat in the event
+                            of an attack.</p>
+                        <br>
+                        <span class="sticky"># Architecture</span><br>
+                        <p>The World Heritage Convention characterises the Red Fort as representing "the zenith of
+                            Mughal creativity".
+                            The fort synthesises Islamic palace structure with local traditions, resulting in a
+                            confluence of "Persian,
+                            Timurid, and Hindu architecture". The fort served as an inspiration for later buildings and
+                            gardens across
+                            the Indian subcontinent.</p>
+                        <p>The Red Fort has an area of 254.67 acres (103.06 ha) enclosed by 2.41 kilometres (1.50 mi) of
+                            defensive
+                            walls, punctuated by turrets and bastions that vary in height from 18 metres (59 ft) on the
+                            river side to 33
+                            metres (108 ft) on the city side. The fort is octagonal, with the north–south axis longer
+                            than the east–west
+                            axis. The marble, floral decorations and the fort's double domes exemplify later Mughal
+                            architecture.</p>
+                        <p>It showcases a high level of ornamentation, and the Kohinoor diamond was reportedly part of
+                            the furnishings.
+                            The fort's artwork synthesises Persian, European and Indian art, resulting in a unique
+                            Shahjahani style rich
+                            in form, expression and colour. Red Fort is one of the building complexes of India
+                            encapsulating a long
+                            period of history and its arts. Even before its 1913 commemoration as a monument of national
+                            importance,
+                            efforts were made to preserve it for posterity.</p>
+                        <p>The Lahori and Delhi Gates were used by the public, and the Khizrabad Gate was for the
+                            emperor.The Lahori
+                            Gate is the main entrance, leading to a domed shopping area known as the Chatta Chowk
+                            (covered bazaar).</p>
+                        <br>
+                        <span class="sticky"># Major structures</span><br>
+                        <p>The most important surviving structures are the walls and ramparts, the main gates, the
+                            audience halls and
+                            the imperial apartments on the eastern riverbank.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="jquery.js"></script>
+<script src="scripts.js"></script>

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Custome';
+}
+@font-face {
+    font-family: Custome;
+    src: url("font/museo700regular.ttf");
+}
+.nev-bar {
+    z-index: 1000;
+    background-color: #00000039;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    position: fixed;
+    column-gap: 50px;
+    padding: 15px 30px;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    backdrop-filter: blur(7px);
+    display: flex;
+}
+
+.nev-bar>div {
+    cursor: pointer;
+}

@@ -1,0 +1,439 @@
+body {
+  margin: 0 0 0 0;
+  font-family: "Custome";
+  text-transform: capitalize;
+  background-color: black;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: Custome;
+  src: url("font/museo700regular.ttf");
+}
+
+.timg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.logincard {
+  z-index: 100;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10cm;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.logincard > div > div {
+  text-align: left;
+  font-size: 15px;
+  margin-left: 15%;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.logincard > div > div > input {
+  width: 80%;
+  background: 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+  font-size: 25px;
+  font-family: "Custome";
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-one {
+  color: rgb(0, 0, 0);
+  transition: all 0.3s;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+  width: 60%;
+  cursor: pointer;
+  left: 10%;
+}
+
+.btn-one span {
+  transition: all 0.3s;
+}
+
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.9);
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  transform: scale(0.1, 1);
+}
+
+.btn-one:hover span {
+  letter-spacing: 10px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1.2);
+}
+
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.logincard > span {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+#alert {
+  text-align: center;
+  margin-top: 90vh;
+  display: block;
+  padding-top: 10px;
+  height: 30px;
+  margin-left: 35%;
+  width: 30%;
+  background: rgba(255, 144, 144, 0.3);
+  box-shadow: 0 12px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  color: rgb(255, 179, 179);
+  position: absolute;
+}
+
+.titlecontent {
+  z-index: 5;
+  padding-top: 100px;
+  margin-left: 10%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+}
+
+.content1 {
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: 40% 40%;
+  margin: 20px 20px 15% 20px;
+  justify-content: center;
+}
+
+.content1 > div {
+  border-width: 0px;
+  border-radius: 20px;
+  height: 150px;
+  backdrop-filter: blur(7px);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.content1 > div:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  box-shadow: 0 0px 20px white;
+}
+
+.content1 > div:hover .st {
+  color: white;
+  transition: 0.3s;
+}
+
+.content1 > div:hover .timg1 {
+  filter: contrast(130%);
+  transition: 0.3s;
+  opacity: 100%;
+}
+
+.timg1 {
+  border-radius: 15px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 100px;
+  position: fixed;
+  height: 150px;
+  width: 50%;
+  transition: 0.3s;
+  opacity: 80%;
+}
+
+.ttimg {
+  z-index: -30;
+  position: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.overlay1 {
+  z-index: -20;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.st {
+  z-index: 2000;
+  text-align: center;
+  padding-top: 10%;
+  padding-left: 50%;
+  font-size: 35px;
+  color: black;
+  transition: 1s;
+}
+
+.nev-bar {
+  z-index: 1000;
+  background-color: #00000039;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  position: fixed;
+  column-gap: 30px;
+  padding: 15px 30px;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  backdrop-filter: blur(7px);
+  display: flex;
+}
+
+.blackb {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: black;
+  z-index: -1;
+}
+
+body {
+  font-family: "Custome";
+  margin: 0 0 0 0;
+  background-color: black;
+}
+
+@font-face {
+  font-family: Custome;
+  src: url("font/museo700regular.ttf");
+}
+
+.overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  background-position: center;
+  background-size: cover;
+  z-index: 20;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.des {
+  z-index: 45;
+  transform: translate(0, -120%);
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 25px;
+}
+
+.des > span {
+  font-size: 100px;
+}
+
+.timg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+  background-color: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+}
+
+.content > span {
+  color: white;
+  font-size: 30px;
+  margin-bottom: -30px;
+}
+
+p {
+  text-indent: 50px;
+}
+
+.sticky {
+  position: sticky;
+  top: 60px;
+  padding-right: 100;
+  display: block;
+  width: 100%;
+  background-color: black;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Custome";
+}
+
+@font-face {
+  font-family: Custome;
+  src: url("font/museo700regular.ttf");
+}
+
+.nev-bar {
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 30px;
+  position: fixed;
+  column-gap: 50px;
+  padding: 15px 30px;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(7px);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nev-bar > div {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 1s;
+}
+
+.nev-bar :hover {
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.monuments {
+  background-color: black;
+}
+
+.home-page {
+  overflow: hidden;
+}
+
+.nev-bar > div {
+  cursor: pointer;
+}
+
+.about-us {
+  z-index: 100;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10cm;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.about-us > span {
+  font-size: 20px;
+}
+
+.about-us > .title {
+  font-size: 30px;
+}
+
+.cont-us {
+  z-index: 100;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10cm;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.cont-us > span {
+  font-size: 20px;
+}
+
+.cont-us > .title {
+  font-size: 30px;
+}
+a {
+  color: white;
+  margin: 5px;
+}
