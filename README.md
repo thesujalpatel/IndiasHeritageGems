@@ -33,13 +33,13 @@ To run this project locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/india-heritage-monuments.git
+   git clone https://github.com/thesujalpatel/InfoWeb
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd india-heritage-monuments
+   cd InfoWeb
    ```
 
 3. Open `index.html` in your web browser to view the project.
